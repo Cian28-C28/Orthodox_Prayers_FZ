@@ -21,7 +21,7 @@ jobs:
         uses: flipperdevices/flipperzero-ufbt-action@v0.1.3
         with:
           sdk-channel: release
-          source-dir: ./
+          source-dir: ./src
 
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v4.6.2

@@ -22,8 +22,8 @@ jobs:
         with:
           sdk-channel: release
 
-     - name: Upload build artifacts
-        uses: actions/upload-artifact@v3
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v4.6.2
         with:
           name: build-artifacts
           path: path/to/artifacts

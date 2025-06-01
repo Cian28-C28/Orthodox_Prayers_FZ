@@ -1,0 +1,5 @@
+[application]
+appid = orthodox_prayers
+name = Orthodox Prayers
+icon = icon.bmp
+permission = filesystem

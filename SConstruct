@@ -4,5 +4,5 @@ Import("env")
 env.MyAddApp(
     appdir = ".",
     target = "Orthodox_Prayers_FZ",
-    Default('main.c'),
+    Default('orthodox_prayers.fap'),
 )

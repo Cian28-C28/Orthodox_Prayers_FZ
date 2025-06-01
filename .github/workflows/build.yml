@@ -22,9 +22,8 @@ jobs:
         with:
           sdk-channel: release
 
-      - name: Upload .fap artifact
-        if: ${{ steps.ufbt_build.outputs.fap-artifacts != '' }}
+     - name: Upload build artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: orthodox_prayers_fap
-          path: ${{ steps.ufbt_build.outputs.fap-artifacts }}
+          name: build-artifacts
+          path: path/to/artifacts

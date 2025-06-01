@@ -21,7 +21,7 @@ jobs:
         uses: flipperdevices/flipperzero-ufbt-action@v0.1.3
         with:
           sdk-channel: release
-          app-dir: ./src  # Replace `source-dir` with `app-dir`
+          app-dir: ./Orthodox_Prayers_FZ/src  # Replace `source-dir` with `app-dir`
 
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v4.6.2

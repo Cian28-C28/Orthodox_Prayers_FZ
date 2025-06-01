@@ -13,22 +13,23 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1) Check out your code
+      # 1) Check out your repository
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2) Build your .fap with uFBT (this auto‐installs the SDK & runs `ufbt build`)
+      # 2) Build your .fap using the official uFBT Action
       - name: Build .fap with uFBT
         id: ufbt_build
         uses: flipperdevices/flipperzero-ufbt-action@v0.1.3
         with:
           sdk-channel: release
-          # (If you want to skip the lint step, add `task: build` here.)
+          # If you want to skip lint, add:
+          # task: build
 
-      # 3) Upload the .fap as a downloadable artifact
+      # 3) Upload the generated .fap to GitHub as an artifact
       - name: Upload .fap artifact
         if: ${{ steps.ufbt_build.outputs.fap-artifacts != '' }}
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: orthodox_prayers_fap
           path: ${{ steps.ufbt_build.outputs.fap-artifacts }}

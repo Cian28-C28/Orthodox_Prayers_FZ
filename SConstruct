@@ -6,4 +6,4 @@ env.MyAddApp(
     target = "Orthodox_Prayers_FZ",
 )
 
-Default('Orthodox_Prayers_FZ.fap')
+Default("Orthodox_Prayers_FZ.fap")

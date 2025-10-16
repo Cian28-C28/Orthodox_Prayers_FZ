@@ -1,5 +1,5 @@
 [application]
-appid = orthodox_prayers
-name = Orthodox Prayers
+appid = c28_txt_vwr
+name = C28_TXT_VWR
 icon = icon.bmp
 permission = filesystem

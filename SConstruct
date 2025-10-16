@@ -3,7 +3,7 @@ Import("env")
 # Register the application
 env.MyAddApp(
     appdir = ".",
-    target = "Orthodox_Prayers_FZ",
+    target = "c28_txt_vwr",
 )
 
-Default(Orthodox_Prayers_FZ.fap)
+Default(c28_txt_vwr.fap)
